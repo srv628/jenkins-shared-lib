@@ -1,4 +1,4 @@
-#!/user/bin/env groovy
+#!/bin/env groovy
 def call() {
     echo "building the docker image"
     withCredentials([usernamePassword(credentialsId:"dockerhub-cred",usernameVariable:"USER",passwordVariable:"PASS")]){
